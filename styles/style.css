@@ -2,4 +2,72 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: #000028;
+  background-image: url("../images/cover-image-dark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: "IBM Plex mono";
+}
+
+.header {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.span-text {
+  position: absolute;
+  right: 1px;
+  inset-inline-end: 20px;
+  inset-block-start: 20px;
+  font-size: 18px;
+}
+
+.span-text::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  inset-block-start: 7px;
+  inset-inline-start: 35px;
+  background-color: #ff0070;
+  border-radius: 75%;
+  border-top: 1px solid #ff0070;
+  border-right: 1px solid #ff0070;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-bottom: 1px solid #ff0070;
+  border-left: 1px solid #ff0070;
+  bottom: 1px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 23px;
+  color: #ff0070;
+  font-weight: 400;
+  margin-block-start: 20px;
+  font-size: 18px;
+}
+
+.header__theme-menu-button {
+  border: 0;
+  background-color: transparent;
+}
+
+.header__heading {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: #db00ff;
+  text-shadow: 4px 4px #ff0070;
 }
