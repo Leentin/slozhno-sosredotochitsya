@@ -14,4 +14,5 @@
   --border-color: #ff0070;
   --text-shadow-color: #ff0070;
   --border-hover: rgba(255 0 16 / 50%);
+  --background-image: url("../images/cover-image-dark.png");
 }
