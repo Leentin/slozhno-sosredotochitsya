@@ -12,7 +12,7 @@
   background-attachment: fixed;
   font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
 }
-s .header__theme-menu-button {
+.header__theme-menu-button {
   background: transparent;
   border: none;
   padding: 2px 13px;
@@ -151,11 +151,10 @@ s .header__theme-menu-button {
 
 .section-question__heading {
   margin-right: 20px;
-  max-width: 315px;
 }
 
 .section-question__grid {
-  max-width: 649px;
+  max-width: 66%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -178,6 +177,7 @@ s .header__theme-menu-button {
 .accent-text {
   text-shadow: 2px 2px var(--accent-shadow-color);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .accent-text:hover {
@@ -234,39 +234,30 @@ s .header__theme-menu-button {
     "tape street street";
 }
 
-.sunset {
+img {
   width: var(--image-resolution);
   height: var(--image-resolution);
-  grid-area: sunset;
   object-fit: var(--image-fill);
+}
+
+.sunset {
+  grid-area: sunset;
 }
 
 .tape {
-  width: var(--image-resolution);
-  height: var(--image-resolution);
   grid-area: tape;
-  object-fit: var(--image-fill);
 }
 
 .ice-cream {
-  width: var(--image-resolution);
-  height: var(--image-resolution);
   grid-area: ice-cream;
-  object-fit: var(--image-fill);
 }
 
 .books {
-  width: var(--image-resolution);
-  height: var(--image-resolution);
   grid-area: books;
-  object-fit: var(--image-fill);
 }
 
 .street {
-  width: var(--image-resolution);
-  height: var(--image-resolution);
   grid-area: street;
-  object-fit: var(--image-fill);
 }
 
 .footer {
@@ -296,7 +287,6 @@ s .header__theme-menu-button {
   }
 
   .header__theme-menu-list {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -310,8 +300,7 @@ s .header__theme-menu-button {
 
   .header__text {
     max-width: 364px;
-    margin-bottom: 183px;
-    align-self: flex-end;
+    align-self: center;
   }
 
   .section-question__grid {
@@ -331,6 +320,12 @@ s .header__theme-menu-button {
 
   .footer {
     font-size: var(--heading-size-mobile);
+  }
+}
+
+@media (width <= 500px) {
+  .section-question {
+    display: block;
   }
 }
 
@@ -359,19 +354,9 @@ s .header__theme-menu-button {
     margin-top: 0px;
   }
 
-  .decorated-zone::after {
-    bottom: 10px;
-    left: 10px;
-  }
-
-  .decorated-zone::before {
-    right: 10px;
-    top: 10px;
-  }
-
   .span-text {
-    right: 38px;
-    top: 10px;
+    right: 48px;
+    top: 20px;
   }
 
   .span-text::after {
@@ -430,7 +415,5 @@ s .header__theme-menu-button {
   }
   .footer {
     margin-block-start: 40px;
-    letter-spacing: -2px;
-    line-height: 95.7;
   }
 }

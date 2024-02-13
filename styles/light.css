@@ -3,9 +3,6 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-.theme_light .span-text {
-  display: none;
-}
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -15,7 +12,7 @@
   --bg-text-color: #ff8dcb;
   --accent-color: #ff0070;
   --accent-text-color: #353430;
-  --title-text-color: #000028;
+  --title-text-color: #353430;
   --text-color: #353430;
   --accent-shadow-color: #ff8dcb;
   --border-color: #353430;
@@ -31,7 +28,7 @@
     --bg-text-color: #ff8dcb;
     --accent-color: #ff0070;
     --accent-text-color: #353430;
-    --title-text-color: #000028;
+    --title-text-color: #353430;
     --text-color: #353430;
     --accent-shadow-color: #ff8dcb;
     --border-color: #353430;
@@ -40,4 +37,11 @@
     --background-image: url("../images/cover-image-light.png");
     --bg-color: #fff1f7;
   }
+  .span-text {
+    display: none;
+  }
+}
+
+.page.theme_light .span-text {
+  display: none;
 }

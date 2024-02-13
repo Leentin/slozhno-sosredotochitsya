@@ -38,4 +38,10 @@
     --background-image: url("../images/cover-image-dark.png");
     --bg-color: #000028;
   }
+  .span-text {
+    display: block;
+  }
+}
+.page.theme_dark .span-text {
+  display: block;
 }
