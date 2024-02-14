@@ -18,6 +18,8 @@
   padding: 2px 13px;
   text-transform: lowercase;
   cursor: pointer;
+  border: 0;
+  background-color: transparent;
 }
 
 .header__theme-menu-item {
@@ -108,11 +110,6 @@
   color: var(--accent-text-color);
   align-self: end;
   margin-top: 20px;
-}
-
-.header__theme-menu-button {
-  border: 0;
-  background-color: transparent;
 }
 
 .header__heading {
