@@ -283,14 +283,14 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-right: 25px;
+    padding-right: 20px;
   }
 
   .header__theme-menu-list {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 11.5px 0;
+    gap: 10px 0;
   }
 
   .header__heading {
@@ -301,6 +301,7 @@ img {
   .header__text {
     max-width: 364px;
     align-self: center;
+    margin-bottom: 20px;
   }
 
   .section-question__grid {
@@ -318,7 +319,7 @@ img {
     max-width: 236px;
   }
 
-  .footer {
+  .footer__heading {
     font-size: var(--heading-size-mobile);
   }
 }
@@ -337,11 +338,11 @@ img {
   }
   .header__text {
     margin-inline: 10px;
-    margin-bottom: 65px;
+    margin-bottom: 10px;
   }
 
   .header__heading {
-    line-height: 80%;
+    line-height: 95.7px;
     margin-inline: 10px;
     max-width: 355px;
   }
@@ -355,13 +356,23 @@ img {
   }
 
   .span-text {
-    right: 48px;
-    top: 20px;
+    right: 38px;
+    top: 10px;
   }
 
   .span-text::after {
     inset-block-start: 8px;
     inset-inline-end: -18px;
+  }
+
+  .decorated-zone::after {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .decorated-zone::before {
+    right: 10px;
+    top: 10px;
   }
 
   .low-heading__text {
@@ -375,16 +386,6 @@ img {
 
   .info__heading {
     margin-block-start: 50px;
-  }
-
-  .decorated-zone__footer::before {
-    bottom: 10px;
-    left: 10px;
-  }
-
-  .decorated-zone__footer::after {
-    top: 10px;
-    right: 10px;
   }
 
   .info__text-block {
